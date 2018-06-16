@@ -18,15 +18,22 @@
         <div>
           <label for="">Driver of:</label>
           <select name="_truck">
+            {{#each driver.truck_id}}
+            <li>{{this}}</li>
+            {{/each}}
           </select>
-          <input type="text" name="_truck" value="{{driver._truck.name}}">
         </div>
         <div>
           <label for="image">Image</label>
           <input id="image" type="text" name="image" value="{{driver.image}}">
         </div>
         <div>
-          <button type="submit" class="btn btn-secondary btn-lg active edit-btn">EDIT</button>
+          <p>
+            <button type="submit" class="btn btn-secondary btn-lg active edit-btn">EDIT</button>
+          </p>
+          <p>
+            <a class="btn btn-secondary btn-lg active edit-btn" href="/drivers">Back</a>
+          </p>
         </div>
       </div>
     </div>

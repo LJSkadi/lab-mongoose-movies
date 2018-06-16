@@ -9,8 +9,11 @@
                 </div>
                 <div>
                     <label for="">Driver</label>
-                    <select name="driver"></select>
-                    <input type="text" name="driver" value="{{truck._driver}}">
+                    <select name="driver">
+                        {{#each truck.driver}}
+                        <li>{{this}}</li>
+                        {{/each}}
+                    </select>
                 </div>
                 <div>
                     <label for="">Year:</label>
@@ -29,7 +32,12 @@
                     <input id="image" type="text" name="image" value="{{truck.image}}">
                 </div>
                 <div>
-                    <button type="submit" class="btn btn-secondary btn-lg active edit-btn">EDIT</button>
+                    <p>
+                        <button type="submit" class="btn btn-secondary btn-lg active edit-btn">EDIT</button>
+                    </p>
+                    <p>
+                        <a class="btn btn-secondary btn-lg active edit-btn" href="/trucks">Back</a>
+                    </p>
                 </div>
             </div>
         </div>

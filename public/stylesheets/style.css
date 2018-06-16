@@ -29,7 +29,11 @@ div {
 
 ul > li {
   list-style: none;
-  text-align: left; }
+  text-align: left;
+  font-size: 1rem; }
+
+p {
+  font-size: 1rem; }
 
 .choose-btn {
   width: 200px;

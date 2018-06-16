@@ -142,6 +142,7 @@ router.get('/driver/:id', (req, res, next) => {
 
    /* GET edit a truck*/
   router.get('/drivers/edit', (req, res, next) => {
+    console.log(Truck.find());
     Driver.findOne({_id: req.query.driver_id})
     .then( driver => {
       res.render("driver-edit", {driver})
@@ -154,6 +155,7 @@ router.get('/driver/:id', (req, res, next) => {
 
   /* POST edit a truck*/
   router.post('/drivers/edit', (req, res, next) => {
+    let driverId = req.query.driver_id;
     let driversFirstName = req.body.firstName;
     let driversLastName = req.body.lastName;
     let drivers_truck = req.body._truck;

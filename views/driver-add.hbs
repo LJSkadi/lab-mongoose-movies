@@ -1,11 +1,12 @@
+<div class="card details" style="width: 17rem;">
 <form action="/drivers/add" method="post">
-    <div>
-        <div>
+    <div class="card-body">
+        <div class="add">
             <label for="firstName">First Name</label>
             <input id="firstName" type="text" name="firstName">
         </div>
 
-        <div>
+        <div class="add">
             <label for="lastName">Last Name</label>
             <input id="lastName" type="text" name="lastName">
         </div>
@@ -15,19 +16,20 @@
         </select>
         <input type="text" name="_truck">-->
 
-        <div>
+        <div class="add">
             <label for="birthday">Birthday</label>
             <input id="birthday" type="text" name="birthday">
         </div>
 
-        <div>
+        <div class="add">
             <label for="image">Image</label>
             <input id="image" type="text" name="image">
         </div>
 
         <div>
-            <button class="btn btn-primary home-search" type="submit">Add this Driver</button>
+            <button class="btn btn-secondary btn-lg active edit-btn" type="submit">Add this Driver</button>
         </div>
 
     </div>
 </form>
+</div>

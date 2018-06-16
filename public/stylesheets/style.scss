@@ -8,6 +8,7 @@ body{
   display: flex;
   align-items: center;
   text-align: center;
+  
 }
 
 
@@ -19,6 +20,7 @@ div {
   text-align: center;
   color: #00ff00;
 }
+
 
 #start{
   margin: 20% auto 20% auto;
@@ -40,8 +42,12 @@ margin: 10px 10px 10px 10px;
 ul > li{
   list-style: none;
   text-align: left;
+  font-size: 1rem;
 }
 
+p{
+  font-size: 1rem;
+}
 .choose-btn {
   width: 200px;
   margin-left: 10px;
