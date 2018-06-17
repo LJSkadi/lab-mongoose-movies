@@ -3,10 +3,10 @@ const mongoose = require("mongoose");
 const Schema   = mongoose.Schema;
 
 const driverSchema = new Schema({
-  firstName: String,
-  lastName: String,
-  truck_id: {type: Schema.Types.ObjectId, ref: 'Truck', default: null},
-  birthday: Date, default: String,
+  firstName: {type: String, default: "Angela"},
+  lastName: {type: String, default: "Putin"},
+  //truck_id: {type: Schema.Types.ObjectId , ref: 'Truck', default: "5b258bc24198eda382a6c23c"},
+  birthday: {type: Date},
   image: String
 });
 
